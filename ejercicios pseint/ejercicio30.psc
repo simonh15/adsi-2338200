@@ -2,20 +2,22 @@ Proceso ejercicio30
 	//Leer dos números y calcular su división, teniendo en cuenta que el denominador no debe ser 0 (cero)
 	
 	
-	Definir num1 Como Entero;
-	Definir divisor Como Entero;
+	Definir num1 Como real;
+	Definir num2 Como real;
+	definir total Como Real;
 	
 	
-	Escribir 'Digite un numero de dos cifras';
+	Escribir 'Digite el primer numero ';
 	Leer num1;
 	Escribir 'Digite el divisor numero';
-	Leer divisor;
+	Leer num2;
 	
 	
-	si num1 mod divisor = 0 Entonces
-		Escribir divisor, ' Es divisor exacto de ' ,num1;
+	si ( num2 == 0 ) Entonces
+		Escribir 'la operacion es incorecta ';
 	SiNo
-		Escribir 'El resto de dividir ' ,num1, ' por ' ,divisor, ' es ' ,num1 mod divisor;
+		total= num1/ num2 ;
+		Escribir ' el total de la division es: ' , total ;
 	FinSi
 	
 	

@@ -4,13 +4,17 @@ Proceso ejercicio25
 	Definir num Como Real;
 	Leer num ; 
 	
-	si num < 3 Entonces
-		Escribir  "su nota es insuficiente ";
-	FinSi
-	si num > 2.9 y num < 4.5 Entonces
-		Escribir " su nota es suficiente " ;
-	FinSi
-	si num > 4.5 y num < 5.1 Entonces
-		Escribir " su nota es bien " ;
+	si ( num < 0 ) o ( num > 5 ) Entonces
+		Escribir ' esta nota es invalida ';
+	SiNo
+		si num < 3 Entonces
+			Escribir  "su nota es insuficiente ";
+		SiNo
+			si num > 2.9 y num < 4.5 Entonces
+				Escribir " su nota es suficiente " ;
+			SiNo
+					Escribir " su nota es bien " ;
+			FinSi
+		FinSi
 	FinSi
 FinProceso

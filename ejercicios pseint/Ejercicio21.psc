@@ -12,14 +12,15 @@ Proceso Ejercicio21
 	Leer num2;
 	
 	//Salida
-	si num1>num2 Entonces
-		Escribir 'Es mayor ' ,num1;
+	si num1==num2 Entonces
+		Escribir ' los numeros son iguales ';
 	SiNo
-		escribir 'Es mayor ' ,num2;
 		
-		
-		si num1 == num2 Entonces
-			Escribir 'los numeros son iguales';
+		si num1 > num2 Entonces
+			Escribir ' el numero ', num1 , ' es mayor que el numero ' , num2;
+			
+		SiNo
+			Escribir ' el numero ', num2 , ' es mayor que el numero ' , num1;
 			
 		FinSi
 	FinSi

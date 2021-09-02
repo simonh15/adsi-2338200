@@ -13,21 +13,38 @@ Proceso Ejercicio23
 	Leer num3;
 	
 	//Salida
-	Si num1>num2 y num2>num3 Entonces
-		Escribir "El orden de mayor a menor es " , num1 , " - " , num2 , " - " , num3;
+	si ( num1== num2 ) y ( num2 == num3 ) Entonces
+		Escribir ' los numeros son igules ';
+	SiNo
+		Si num1>num2 y num2>num3 Entonces
+			Escribir "El orden de mayor a menor es " , num1 , " - " , num2 , " - " , num3;
+		sino
+			Si num2>num1 y num1>num3 Entonces
+				Escribir "El orden de mayor a menor es " , num2 , " - " , num1 , " - " , num3;
+			SiNo
+				Si num3>num1 y num1>num2 Entonces
+					Escribir "El orden de mayor a menor es " , num3 , " - " , num1 , " - " , num2;
+				SiNo
+					Si num1>num3 y num3>num2 Entonces
+						Escribir "El orden de mayor a menor es " , num1 , " - " , num3 , " - " , num2;
+					SiNo
+						Si num1>num3 y num3>num2 Entonces
+							Escribir "El orden de mayor a menor es " , num1 , " - " , num3 , " - " , num2;
+						SiNo
+							si num2>num3 y num3>num1 Entonces
+								Escribir "El orden de mayor a menor es " , num2 , " - " , num3 , " - " , num1;
+							FinSi
+						FinSi
+					FinSi
+				FinSi
+			FinSi
+		FinSi
 	FinSi
-	Si num2>num1 y num1>num3 Entonces
-		Escribir "El orden de mayor a menor es " , num2 , " - " , num1 , " - " , num3;
-	FinSi
-	Si num3>num1 y num1>num2 Entonces
-		Escribir "El orden de mayor a menor es " , num3 , " - " , num1 , " - " , num2;
-	FinSi
-	Si num1>num3 y num3>num2 Entonces
-		Escribir "El orden de mayor a menor es " , num1 , " - " , num3 , " - " , num2;
-	FinSi
-	Si num3>num2 y num2>num1 Entonces
-		Escribir "El orden de mayor a menor es " , num3 , " - " , num2 , " - " , num1;
-	FinSi
+	
+	
+	
+	
+	
 	
 	
 FinProceso
