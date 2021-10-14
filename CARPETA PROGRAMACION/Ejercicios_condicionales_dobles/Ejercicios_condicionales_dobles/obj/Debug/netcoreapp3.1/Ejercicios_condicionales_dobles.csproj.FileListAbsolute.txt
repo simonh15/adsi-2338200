@@ -1,0 +1,5 @@
+C:\Users\usuario\OneDrive\Escritorio\adsi-2338200\CARPETA PROGRAMACION\Ejercicios_condicionales_dobles\Ejercicios_condicionales_dobles\obj\Debug\netcoreapp3.1\Ejercicios_condicionales_dobles.csproj.AssemblyReference.cache
+C:\Users\usuario\OneDrive\Escritorio\adsi-2338200\CARPETA PROGRAMACION\Ejercicios_condicionales_dobles\Ejercicios_condicionales_dobles\obj\Debug\netcoreapp3.1\Ejercicios_condicionales_dobles.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\usuario\OneDrive\Escritorio\adsi-2338200\CARPETA PROGRAMACION\Ejercicios_condicionales_dobles\Ejercicios_condicionales_dobles\obj\Debug\netcoreapp3.1\Ejercicios_condicionales_dobles.AssemblyInfoInputs.cache
+C:\Users\usuario\OneDrive\Escritorio\adsi-2338200\CARPETA PROGRAMACION\Ejercicios_condicionales_dobles\Ejercicios_condicionales_dobles\obj\Debug\netcoreapp3.1\Ejercicios_condicionales_dobles.AssemblyInfo.cs
+C:\Users\usuario\OneDrive\Escritorio\adsi-2338200\CARPETA PROGRAMACION\Ejercicios_condicionales_dobles\Ejercicios_condicionales_dobles\obj\Debug\netcoreapp3.1\Ejercicios_condicionales_dobles.csproj.CoreCompileInputs.cache
