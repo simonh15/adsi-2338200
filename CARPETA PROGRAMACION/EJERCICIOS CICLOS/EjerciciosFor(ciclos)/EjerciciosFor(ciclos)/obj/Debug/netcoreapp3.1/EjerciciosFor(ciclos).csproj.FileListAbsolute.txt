@@ -1,0 +1,28 @@
+C:\Users\usuario\source\repos\EjerciciosFor(ciclos)\EjerciciosFor(ciclos)\obj\Debug\netcoreapp3.1\EjerciciosFor(ciclos).csproj.AssemblyReference.cache
+C:\Users\usuario\source\repos\EjerciciosFor(ciclos)\EjerciciosFor(ciclos)\obj\Debug\netcoreapp3.1\EjerciciosFor(ciclos).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\usuario\source\repos\EjerciciosFor(ciclos)\EjerciciosFor(ciclos)\obj\Debug\netcoreapp3.1\EjerciciosFor(ciclos).AssemblyInfoInputs.cache
+C:\Users\usuario\source\repos\EjerciciosFor(ciclos)\EjerciciosFor(ciclos)\obj\Debug\netcoreapp3.1\EjerciciosFor(ciclos).AssemblyInfo.cs
+C:\Users\usuario\source\repos\EjerciciosFor(ciclos)\EjerciciosFor(ciclos)\obj\Debug\netcoreapp3.1\EjerciciosFor(ciclos).csproj.CoreCompileInputs.cache
+C:\Users\usuario\source\repos\EjerciciosFor(ciclos)\EjerciciosFor(ciclos)\bin\Debug\netcoreapp3.1\EjerciciosFor(ciclos).exe
+C:\Users\usuario\source\repos\EjerciciosFor(ciclos)\EjerciciosFor(ciclos)\bin\Debug\netcoreapp3.1\EjerciciosFor(ciclos).deps.json
+C:\Users\usuario\source\repos\EjerciciosFor(ciclos)\EjerciciosFor(ciclos)\bin\Debug\netcoreapp3.1\EjerciciosFor(ciclos).runtimeconfig.json
+C:\Users\usuario\source\repos\EjerciciosFor(ciclos)\EjerciciosFor(ciclos)\bin\Debug\netcoreapp3.1\EjerciciosFor(ciclos).runtimeconfig.dev.json
+C:\Users\usuario\source\repos\EjerciciosFor(ciclos)\EjerciciosFor(ciclos)\bin\Debug\netcoreapp3.1\EjerciciosFor(ciclos).dll
+C:\Users\usuario\source\repos\EjerciciosFor(ciclos)\EjerciciosFor(ciclos)\bin\Debug\netcoreapp3.1\EjerciciosFor(ciclos).pdb
+C:\Users\usuario\source\repos\EjerciciosFor(ciclos)\EjerciciosFor(ciclos)\obj\Debug\netcoreapp3.1\EjerciciosFor(ciclos).dll
+C:\Users\usuario\source\repos\EjerciciosFor(ciclos)\EjerciciosFor(ciclos)\obj\Debug\netcoreapp3.1\EjerciciosFor(ciclos).pdb
+C:\Users\usuario\source\repos\EjerciciosFor(ciclos)\EjerciciosFor(ciclos)\obj\Debug\netcoreapp3.1\EjerciciosFor(ciclos).genruntimeconfig.cache
+C:\Users\usuario\OneDrive\Escritorio\adsi-2338200\CARPETA PROGRAMACION\EjerciciosFor(ciclos)\EjerciciosFor(ciclos)\bin\Debug\netcoreapp3.1\EjerciciosFor(ciclos).exe
+C:\Users\usuario\OneDrive\Escritorio\adsi-2338200\CARPETA PROGRAMACION\EjerciciosFor(ciclos)\EjerciciosFor(ciclos)\bin\Debug\netcoreapp3.1\EjerciciosFor(ciclos).deps.json
+C:\Users\usuario\OneDrive\Escritorio\adsi-2338200\CARPETA PROGRAMACION\EjerciciosFor(ciclos)\EjerciciosFor(ciclos)\bin\Debug\netcoreapp3.1\EjerciciosFor(ciclos).runtimeconfig.json
+C:\Users\usuario\OneDrive\Escritorio\adsi-2338200\CARPETA PROGRAMACION\EjerciciosFor(ciclos)\EjerciciosFor(ciclos)\bin\Debug\netcoreapp3.1\EjerciciosFor(ciclos).runtimeconfig.dev.json
+C:\Users\usuario\OneDrive\Escritorio\adsi-2338200\CARPETA PROGRAMACION\EjerciciosFor(ciclos)\EjerciciosFor(ciclos)\bin\Debug\netcoreapp3.1\EjerciciosFor(ciclos).dll
+C:\Users\usuario\OneDrive\Escritorio\adsi-2338200\CARPETA PROGRAMACION\EjerciciosFor(ciclos)\EjerciciosFor(ciclos)\bin\Debug\netcoreapp3.1\EjerciciosFor(ciclos).pdb
+C:\Users\usuario\OneDrive\Escritorio\adsi-2338200\CARPETA PROGRAMACION\EjerciciosFor(ciclos)\EjerciciosFor(ciclos)\obj\Debug\netcoreapp3.1\EjerciciosFor(ciclos).csproj.AssemblyReference.cache
+C:\Users\usuario\OneDrive\Escritorio\adsi-2338200\CARPETA PROGRAMACION\EjerciciosFor(ciclos)\EjerciciosFor(ciclos)\obj\Debug\netcoreapp3.1\EjerciciosFor(ciclos).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\usuario\OneDrive\Escritorio\adsi-2338200\CARPETA PROGRAMACION\EjerciciosFor(ciclos)\EjerciciosFor(ciclos)\obj\Debug\netcoreapp3.1\EjerciciosFor(ciclos).AssemblyInfoInputs.cache
+C:\Users\usuario\OneDrive\Escritorio\adsi-2338200\CARPETA PROGRAMACION\EjerciciosFor(ciclos)\EjerciciosFor(ciclos)\obj\Debug\netcoreapp3.1\EjerciciosFor(ciclos).AssemblyInfo.cs
+C:\Users\usuario\OneDrive\Escritorio\adsi-2338200\CARPETA PROGRAMACION\EjerciciosFor(ciclos)\EjerciciosFor(ciclos)\obj\Debug\netcoreapp3.1\EjerciciosFor(ciclos).csproj.CoreCompileInputs.cache
+C:\Users\usuario\OneDrive\Escritorio\adsi-2338200\CARPETA PROGRAMACION\EjerciciosFor(ciclos)\EjerciciosFor(ciclos)\obj\Debug\netcoreapp3.1\EjerciciosFor(ciclos).dll
+C:\Users\usuario\OneDrive\Escritorio\adsi-2338200\CARPETA PROGRAMACION\EjerciciosFor(ciclos)\EjerciciosFor(ciclos)\obj\Debug\netcoreapp3.1\EjerciciosFor(ciclos).pdb
+C:\Users\usuario\OneDrive\Escritorio\adsi-2338200\CARPETA PROGRAMACION\EjerciciosFor(ciclos)\EjerciciosFor(ciclos)\obj\Debug\netcoreapp3.1\EjerciciosFor(ciclos).genruntimeconfig.cache

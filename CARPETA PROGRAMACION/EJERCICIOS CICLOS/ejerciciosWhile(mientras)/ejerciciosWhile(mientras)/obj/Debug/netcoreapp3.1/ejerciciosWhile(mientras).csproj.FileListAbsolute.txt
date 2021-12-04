@@ -1,0 +1,28 @@
+C:\Users\usuario\source\repos\ejerciciosWhile(mientras)\ejerciciosWhile(mientras)\bin\Debug\netcoreapp3.1\ejerciciosWhile(mientras).exe
+C:\Users\usuario\source\repos\ejerciciosWhile(mientras)\ejerciciosWhile(mientras)\bin\Debug\netcoreapp3.1\ejerciciosWhile(mientras).deps.json
+C:\Users\usuario\source\repos\ejerciciosWhile(mientras)\ejerciciosWhile(mientras)\bin\Debug\netcoreapp3.1\ejerciciosWhile(mientras).runtimeconfig.json
+C:\Users\usuario\source\repos\ejerciciosWhile(mientras)\ejerciciosWhile(mientras)\bin\Debug\netcoreapp3.1\ejerciciosWhile(mientras).runtimeconfig.dev.json
+C:\Users\usuario\source\repos\ejerciciosWhile(mientras)\ejerciciosWhile(mientras)\bin\Debug\netcoreapp3.1\ejerciciosWhile(mientras).dll
+C:\Users\usuario\source\repos\ejerciciosWhile(mientras)\ejerciciosWhile(mientras)\bin\Debug\netcoreapp3.1\ejerciciosWhile(mientras).pdb
+C:\Users\usuario\source\repos\ejerciciosWhile(mientras)\ejerciciosWhile(mientras)\obj\Debug\netcoreapp3.1\ejerciciosWhile(mientras).csproj.AssemblyReference.cache
+C:\Users\usuario\source\repos\ejerciciosWhile(mientras)\ejerciciosWhile(mientras)\obj\Debug\netcoreapp3.1\ejerciciosWhile(mientras).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\usuario\source\repos\ejerciciosWhile(mientras)\ejerciciosWhile(mientras)\obj\Debug\netcoreapp3.1\ejerciciosWhile(mientras).AssemblyInfoInputs.cache
+C:\Users\usuario\source\repos\ejerciciosWhile(mientras)\ejerciciosWhile(mientras)\obj\Debug\netcoreapp3.1\ejerciciosWhile(mientras).AssemblyInfo.cs
+C:\Users\usuario\source\repos\ejerciciosWhile(mientras)\ejerciciosWhile(mientras)\obj\Debug\netcoreapp3.1\ejerciciosWhile(mientras).csproj.CoreCompileInputs.cache
+C:\Users\usuario\source\repos\ejerciciosWhile(mientras)\ejerciciosWhile(mientras)\obj\Debug\netcoreapp3.1\ejerciciosWhile(mientras).dll
+C:\Users\usuario\source\repos\ejerciciosWhile(mientras)\ejerciciosWhile(mientras)\obj\Debug\netcoreapp3.1\ejerciciosWhile(mientras).pdb
+C:\Users\usuario\source\repos\ejerciciosWhile(mientras)\ejerciciosWhile(mientras)\obj\Debug\netcoreapp3.1\ejerciciosWhile(mientras).genruntimeconfig.cache
+C:\Users\usuario\OneDrive\Escritorio\adsi-2338200\CARPETA PROGRAMACION\ejerciciosWhile(mientras)\ejerciciosWhile(mientras)\bin\Debug\netcoreapp3.1\ejerciciosWhile(mientras).exe
+C:\Users\usuario\OneDrive\Escritorio\adsi-2338200\CARPETA PROGRAMACION\ejerciciosWhile(mientras)\ejerciciosWhile(mientras)\bin\Debug\netcoreapp3.1\ejerciciosWhile(mientras).deps.json
+C:\Users\usuario\OneDrive\Escritorio\adsi-2338200\CARPETA PROGRAMACION\ejerciciosWhile(mientras)\ejerciciosWhile(mientras)\bin\Debug\netcoreapp3.1\ejerciciosWhile(mientras).runtimeconfig.json
+C:\Users\usuario\OneDrive\Escritorio\adsi-2338200\CARPETA PROGRAMACION\ejerciciosWhile(mientras)\ejerciciosWhile(mientras)\bin\Debug\netcoreapp3.1\ejerciciosWhile(mientras).runtimeconfig.dev.json
+C:\Users\usuario\OneDrive\Escritorio\adsi-2338200\CARPETA PROGRAMACION\ejerciciosWhile(mientras)\ejerciciosWhile(mientras)\bin\Debug\netcoreapp3.1\ejerciciosWhile(mientras).dll
+C:\Users\usuario\OneDrive\Escritorio\adsi-2338200\CARPETA PROGRAMACION\ejerciciosWhile(mientras)\ejerciciosWhile(mientras)\bin\Debug\netcoreapp3.1\ejerciciosWhile(mientras).pdb
+C:\Users\usuario\OneDrive\Escritorio\adsi-2338200\CARPETA PROGRAMACION\ejerciciosWhile(mientras)\ejerciciosWhile(mientras)\obj\Debug\netcoreapp3.1\ejerciciosWhile(mientras).csproj.AssemblyReference.cache
+C:\Users\usuario\OneDrive\Escritorio\adsi-2338200\CARPETA PROGRAMACION\ejerciciosWhile(mientras)\ejerciciosWhile(mientras)\obj\Debug\netcoreapp3.1\ejerciciosWhile(mientras).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\usuario\OneDrive\Escritorio\adsi-2338200\CARPETA PROGRAMACION\ejerciciosWhile(mientras)\ejerciciosWhile(mientras)\obj\Debug\netcoreapp3.1\ejerciciosWhile(mientras).AssemblyInfoInputs.cache
+C:\Users\usuario\OneDrive\Escritorio\adsi-2338200\CARPETA PROGRAMACION\ejerciciosWhile(mientras)\ejerciciosWhile(mientras)\obj\Debug\netcoreapp3.1\ejerciciosWhile(mientras).AssemblyInfo.cs
+C:\Users\usuario\OneDrive\Escritorio\adsi-2338200\CARPETA PROGRAMACION\ejerciciosWhile(mientras)\ejerciciosWhile(mientras)\obj\Debug\netcoreapp3.1\ejerciciosWhile(mientras).csproj.CoreCompileInputs.cache
+C:\Users\usuario\OneDrive\Escritorio\adsi-2338200\CARPETA PROGRAMACION\ejerciciosWhile(mientras)\ejerciciosWhile(mientras)\obj\Debug\netcoreapp3.1\ejerciciosWhile(mientras).dll
+C:\Users\usuario\OneDrive\Escritorio\adsi-2338200\CARPETA PROGRAMACION\ejerciciosWhile(mientras)\ejerciciosWhile(mientras)\obj\Debug\netcoreapp3.1\ejerciciosWhile(mientras).pdb
+C:\Users\usuario\OneDrive\Escritorio\adsi-2338200\CARPETA PROGRAMACION\ejerciciosWhile(mientras)\ejerciciosWhile(mientras)\obj\Debug\netcoreapp3.1\ejerciciosWhile(mientras).genruntimeconfig.cache
