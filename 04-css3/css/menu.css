@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    background: linear-gradient(#8ae1f7, #11677c);
+    font-family: 'Poppins', sans-serif;
+    color: #08313b;
+    
+}
+
+main {
+    margin: 20px auto;
+    width: 380px;
+}
+
+main h1{
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 4px solid #08313b;
+    padding-bottom: 8px;
+}
+main nav.menu {
+    list-style: none;
+}
+main nav.menu li a:link,
+main nav.menu li a:visited{
+    background-color: #08313b;
+    display: block;
+    color: #8ae1f7;
+    margin-bottom: 12px;
+    padding: 10px;
+    position: relative;
+    text-decoration: none;
+    text-indent: 40px;
+    border-radius: 0px 6px 30px 0px;
+    transition: all 0.5s ease-in ;
+}
+main nav.menu li a span{
+    background-color: #11677c;
+    border-radius: 50%;
+    font-weight: 600;
+    font-size: 1rem;
+    display: block;
+    padding: 20px;
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    line-height: 1rem;
+    top: -3px; left: -20px;
+    text-indent: -2px;
+    text-align: center;
+    transition: all 0.5s ease-in;
+    border: 2px solid #08313b;
+
+}
+main nav.menu li a:hover{
+    color: #fff;
+    text-indent: 56px;
+}
+main nav.menu li a:hover span { 
+    transform: rotate(360deg) ;
+    background-color: #fff;
+    color: #08313b;
+}
