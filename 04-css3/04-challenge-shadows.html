@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge shadows</title>
+    <link rel="stylesheet" href="css/master.css">
+    <style>
+        figure.frame {
+            height: 240px;
+            margin: 20px auto;
+            width: 280px;
+        }
+        div.squares {
+            background: url(imags/square.png);
+            opacity: 0.6;
+            z-index: 2;
+            margin-top: -20px;
+            height: 260px;
+        }
+        div.pokemon {
+            background-color: #fff;
+            height: 20px;
+            width: 20px;
+            box-shadow: 20px  0 0 0 #fff,
+                        40px  0 0 0 #fff,
+                        60px  0 0 0 #fff,
+                        80px  0 0 0 #fff,
+                        100px 0 0 0 #000,
+                        120px 0 0 0 #000,
+                        140px 0 0 0 #000,
+                        160px 0 0 0 #000,
+                        180px 0 0 0 #fff,
+                        200px 0 0 0 #fff,
+                        220px 0 0 0 #fff,
+                        240px 0 0 0 #fff,
+                        260px 0 0 0 #fff,
+                        
+                        0px   20px 0 0 #fff,                   
+                        20px  20px 0 0 #fff,
+                        40px  20px 0 0 #fff,
+                        60px  20px 0 0 #000,
+                        80px  20px 0 0 #000,
+                        100px 20px 0 0 #ff0000,
+                        120px 20px 0 0 #ff0000,
+                        140px 20px 0 0 #ff0000,
+                        160px 20px 0 0 #ff0000,
+                        180px 20px 0 0 #000,
+                        200px 20px 0 0 #000,
+                        220px 20px 0 0 #fff,
+                        240px 20px 0 0 #fff,
+                        260px 20px 0 0 #fff,
+                        
+                        0px   40px 0 0 #fff,                   
+                        20px  40px 0 0 #fff,
+                        40px  40px 0 0 #000,
+                        60px  40px 0 0 #ff0000,
+                        80px  40px 0 0 #ff0000,
+                        100px 40px 0 0 #ff0000,
+                        120px 40px 0 0 #ff0000,
+                        140px 40px 0 0 #ff0000,
+                        160px 40px 0 0 #ff0000,
+                        180px 40px 0 0 #ff0000,
+                        200px 40px 0 0 #ff0000,
+                        220px 40px 0 0 #000,
+                        240px 40px 0 0 #fff,
+                        260px 40px 0 0 #fff,
+
+                        0px   60px 0 0 #fff,                   
+                        20px  60px 0 0 #fff,
+                        40px  60px 0 0 #000,
+                        60px  60px 0 0 #ff0000,
+                        80px  60px 0 0 #ff0000,
+                        100px 60px 0 0 #ff0000,
+                        120px 60px 0 0 #ff0000,
+                        140px 60px 0 0 #ff0000,
+                        160px 60px 0 0 #ff0000,
+                        180px 60px 0 0 #ff0000,
+                        200px 60px 0 0 #ff0000,
+                        220px 60px 0 0 #000,
+                        240px 60px 0 0 #fff,
+                        260px 60px 0 0 #fff,
+
+                        0px   80px 0 0 #fff,                   
+                        20px  80px 0 0 #000,
+                        40px  80px 0 0 #ff0000,
+                        60px  80px 0 0 #ff0000,
+                        80px  80px 0 0 #ff0000,
+                        100px 80px 0 0 #ff0000,
+                        120px 80px 0 0 #ff0000,
+                        140px 80px 0 0 #ff0000,
+                        160px 80px 0 0 #ff0000,
+                        180px 80px 0 0 #ff0000,
+                        200px 80px 0 0 #ff0000,
+                        220px 80px 0 0 #ff0000,
+                        240px 80px 0 0 #000,
+                        260px 80px 0 0 #fff,
+
+                        0px   100px 0 0 #fff,                   
+                        20px  100px 0 0 #fff,
+                        40px  100px 0 0 #000,
+                        60px  100px 0 0 #000,
+                        80px  100px 0 0 #000,
+                        100px 100px 0 0 #ff0000,
+                        120px 100px 0 0 #ff0000,
+                        140px 100px 0 0 #ff0000,
+                        160px 100px 0 0 #ff0000,
+                        180px 100px 0 0 #000,
+                        200px 100px 0 0 #000,
+                        220px 100px 0 0 #000,
+                        240px 100px 0 0 #fff,
+                        260px 100px 0 0 #fff,
+
+                        0px   120px 0 0 #fff,                   
+                        20px  120px 0 0 #000,
+                        40px  120px 0 0 ,
+                        60px  120px 0 0 ,
+                        80px  120px 0 0 ,
+                        100px 120px 0 0 #ff0000,
+                        120px 120px 0 0 #000,
+                        140px 120px 0 0 #000,
+                        160px 120px 0 0 #ff0000,
+                        180px 120px 0 0 #000,
+                        200px 120px 0 0 #000,
+                        220px 120px 0 0 #000,
+                        240px 120px 0 0 ,
+                        260px 120px 0 0 #fff,
+
+                        0px   140px 0 0 #fff,                   
+                        20px  140px 0 0 #fff,
+                        40px  140px 0 0 #000,
+                        60px  140px 0 0 #000,
+                        80px  140px 0 0 #000,
+                        100px 140px 0 0 #ff0000,
+                        120px 140px 0 0 #ff0000,
+                        140px 140px 0 0 #ff0000,
+                        160px 140px 0 0 #ff0000,
+                        180px 140px 0 0 #000,
+                        200px 140px 0 0 #000,
+                        220px 140px 0 0 #000,
+                        240px 140px 0 0 #fff,
+                        260px 140px 0 0 #fff,
+
+                        0px   160px 0 0 #fff,                   
+                        20px  160px 0 0 #fff,
+                        40px  160px 0 0 #000,
+                        60px  160px 0 0 #000,
+                        80px  160px 0 0 #000,
+                        100px 160px 0 0 #ff0000,
+                        120px 160px 0 0 #ff0000,
+                        140px 160px 0 0 #ff0000,
+                        160px 160px 0 0 #ff0000,
+                        180px 160px 0 0 #000,
+                        200px 160px 0 0 #000,
+                        220px 160px 0 0 #000,
+                        240px 160px 0 0 #fff,
+                        260px 160px 0 0 #fff,
+
+                        0px   180px 0 0 #fff,                   
+                        20px  180px 0 0 #fff,
+                        40px  180px 0 0 #000,
+                        60px  180px 0 0 #000,
+                        80px  180px 0 0 #000,
+                        100px 180px 0 0 #ff0000,
+                        120px 180px 0 0 #ff0000,
+                        140px 180px 0 0 #ff0000,
+                        160px 180px 0 0 #ff0000,
+                        180px 180px 0 0 #000,
+                        200px 180px 0 0 #000,
+                        220px 180px 0 0 #000,
+                        240px 180px 0 0 #fff,
+                        260px 180px 0 0 #fff,
+
+                        0px   200px 0 0 #fff,                   
+                        20px  200px 0 0 #fff,
+                        40px  200px 0 0 #000,
+                        60px  200px 0 0 #000,
+                        80px  200px 0 0 #000,
+                        100px 200px 0 0 #ff0000,
+                        120px 200px 0 0 #ff0000,
+                        140px 200px 0 0 #ff0000,
+                        160px 200px 0 0 #ff0000,
+                        180px 200px 0 0 #000,
+                        200px 200px 0 0 #000,
+                        220px 200px 0 0 #000,
+                        240px 200px 0 0 #fff,
+                        260px 200px 0 0 #fff,
+
+                        0px   220px 0 0 #fff,                   
+                        20px  220px 0 0 #fff,
+                        40px  220px 0 0 #000,
+                        60px  220px 0 0 #000,
+                        80px  220px 0 0 #000,
+                        100px 220px 0 0 #ff0000,
+                        120px 220px 0 0 #ff0000,
+                        140px 220px 0 0 #ff0000,
+                        160px 220px 0 0 #ff0000,
+                        180px 220px 0 0 #000,
+                        200px 220px 0 0 #000,
+                        220px 220px 0 0 #000,
+                        240px 220px 0 0 #fff,
+                        260px 220px 0 0 #fff,
+
+                        0px   240px 0 0 #fff,
+                        20px  240px 0 0 #fff,
+                        40px  240px 0 0 #fff,
+                        60px  240px 0 0 #fff,
+                        80px  240px 0 0 #fff,
+                        100px 240px 0 0 #000,
+                        120px 240px 0 0 #000,
+                        140px 240px 0 0 #000,
+                        160px 240px 0 0 #000,
+                        180px 240px 0 0 #fff,
+                        200px 240px 0 0 #fff,
+                        220px 240px 0 0 #fff,
+                        240px 240px 0 0 #fff,
+                        260px 240px 0 0 #fff;
+
+
+        }
+        
+
+        
+    </style>
+</head>
+<body>
+<main>
+    <header>
+        <h1><a href="index.html">🏡</a>Challenge shadows</h1>
+    </header>
+    <section>
+        <h2>pokemon</h2>
+        <figure class="frame">
+            <div class="pokemon"></div>
+            <div class="squares"></div>
+        </figure>
+    </section>
+</main>
+</body>
+</html>
