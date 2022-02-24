@@ -2,10 +2,10 @@
 -- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
--- Servidor: 127.0.0.1
--- Tiempo de generación: 22-02-2022 a las 17:53:38
--- Versión del servidor: 10.4.22-MariaDB
--- Versión de PHP: 8.1.2
+-- Host: 127.0.0.1
+-- Generation Time: Feb 24, 2022 at 04:06 PM
+-- Server version: 10.4.21-MariaDB
+-- PHP Version: 8.0.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `universidad`
+-- Database: `universidad`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `asignaturas`
+-- Table structure for table `asignaturas`
 --
 
 CREATE TABLE `asignaturas` (
@@ -36,7 +36,7 @@ CREATE TABLE `asignaturas` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `curso`
+-- Table structure for table `curso`
 --
 
 CREATE TABLE `curso` (
@@ -48,7 +48,7 @@ CREATE TABLE `curso` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `decanos`
+-- Table structure for table `decanos`
 --
 
 CREATE TABLE `decanos` (
@@ -59,7 +59,7 @@ CREATE TABLE `decanos` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Volcado de datos para la tabla `decanos`
+-- Dumping data for table `decanos`
 --
 
 INSERT INTO `decanos` (`cedula`, `nombres`, `apellidos`, `celular`) VALUES
@@ -72,7 +72,7 @@ INSERT INTO `decanos` (`cedula`, `nombres`, `apellidos`, `celular`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `docentes`
+-- Table structure for table `docentes`
 --
 
 CREATE TABLE `docentes` (
@@ -86,7 +86,33 @@ CREATE TABLE `docentes` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `estudiantes`
+-- Table structure for table `empleados`
+--
+
+CREATE TABLE `empleados` (
+  `cedula` int(50) NOT NULL,
+  `nombres` varchar(200) DEFAULT NULL,
+  `apellidos` varchar(200) DEFAULT NULL,
+  `genero` varchar(10) DEFAULT NULL,
+  `salario` int(200) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `empleados`
+--
+
+INSERT INTO `empleados` (`cedula`, `nombres`, `apellidos`, `genero`, `salario`) VALUES
+(34764456, 'Rubén', 'Osorio', 'M', 350000),
+(43532658, 'Viviana', 'Rodríguez', 'F', 300000),
+(54637829, 'Martha', 'Castro', 'F', 450000),
+(63297867, 'Fernando', 'Muñoz', 'M', 400000),
+(76543275, 'Raúl', 'Franco', 'M', 250000),
+(98765434, 'Sergio', 'Gálvez', 'M', 500000);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `estudiantes`
 --
 
 CREATE TABLE `estudiantes` (
@@ -99,7 +125,7 @@ CREATE TABLE `estudiantes` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `facultad`
+-- Table structure for table `facultad`
 --
 
 CREATE TABLE `facultad` (
@@ -110,7 +136,7 @@ CREATE TABLE `facultad` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Volcado de datos para la tabla `facultad`
+-- Dumping data for table `facultad`
 --
 
 INSERT INTO `facultad` (`numero`, `nombre_facultad`, `ubicacion`, `cedula_dec`) VALUES
@@ -124,7 +150,7 @@ INSERT INTO `facultad` (`numero`, `nombre_facultad`, `ubicacion`, `cedula_dec`) 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `inscripcion`
+-- Table structure for table `inscripcion`
 --
 
 CREATE TABLE `inscripcion` (
@@ -133,18 +159,36 @@ CREATE TABLE `inscripcion` (
   `Nro_ID_est` int(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+-- --------------------------------------------------------
+
 --
--- Índices para tablas volcadas
+-- Table structure for table `libros`
+--
+
+CREATE TABLE `libros` (
+  `codigo` int(11) NOT NULL,
+  `titulo` varchar(50) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `libros`
+--
+
+INSERT INTO `libros` (`codigo`, `titulo`) VALUES
+(1, 'la cama sin patas');
+
+--
+-- Indexes for dumped tables
 --
 
 --
--- Indices de la tabla `asignaturas`
+-- Indexes for table `asignaturas`
 --
 ALTER TABLE `asignaturas`
   ADD PRIMARY KEY (`codigo`);
 
 --
--- Indices de la tabla `curso`
+-- Indexes for table `curso`
 --
 ALTER TABLE `curso`
   ADD PRIMARY KEY (`Nro_ID`),
@@ -152,33 +196,39 @@ ALTER TABLE `curso`
   ADD KEY `codigo_asi` (`codigo_asi`);
 
 --
--- Indices de la tabla `decanos`
+-- Indexes for table `decanos`
 --
 ALTER TABLE `decanos`
   ADD PRIMARY KEY (`cedula`);
 
 --
--- Indices de la tabla `docentes`
+-- Indexes for table `docentes`
 --
 ALTER TABLE `docentes`
   ADD PRIMARY KEY (`cedula`),
   ADD KEY `numero_fac` (`numero_fac`);
 
 --
--- Indices de la tabla `estudiantes`
+-- Indexes for table `empleados`
+--
+ALTER TABLE `empleados`
+  ADD PRIMARY KEY (`cedula`);
+
+--
+-- Indexes for table `estudiantes`
 --
 ALTER TABLE `estudiantes`
   ADD PRIMARY KEY (`Nro_ID`);
 
 --
--- Indices de la tabla `facultad`
+-- Indexes for table `facultad`
 --
 ALTER TABLE `facultad`
   ADD PRIMARY KEY (`numero`),
   ADD KEY `cedula_dec` (`cedula_dec`);
 
 --
--- Indices de la tabla `inscripcion`
+-- Indexes for table `inscripcion`
 --
 ALTER TABLE `inscripcion`
   ADD PRIMARY KEY (`Nro_inscripcion`),
@@ -186,30 +236,46 @@ ALTER TABLE `inscripcion`
   ADD KEY `Nro_ID_est` (`Nro_ID_est`);
 
 --
--- Restricciones para tablas volcadas
+-- Indexes for table `libros`
+--
+ALTER TABLE `libros`
+  ADD PRIMARY KEY (`codigo`);
+
+--
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- Filtros para la tabla `curso`
+-- AUTO_INCREMENT for table `libros`
+--
+ALTER TABLE `libros`
+  MODIFY `codigo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `curso`
 --
 ALTER TABLE `curso`
   ADD CONSTRAINT `curso_ibfk_1` FOREIGN KEY (`cedula_doc`) REFERENCES `docentes` (`cedula`),
   ADD CONSTRAINT `curso_ibfk_2` FOREIGN KEY (`codigo_asi`) REFERENCES `asignaturas` (`codigo`);
 
 --
--- Filtros para la tabla `docentes`
+-- Constraints for table `docentes`
 --
 ALTER TABLE `docentes`
   ADD CONSTRAINT `docentes_ibfk_1` FOREIGN KEY (`numero_fac`) REFERENCES `facultad` (`numero`);
 
 --
--- Filtros para la tabla `facultad`
+-- Constraints for table `facultad`
 --
 ALTER TABLE `facultad`
   ADD CONSTRAINT `facultad_ibfk_1` FOREIGN KEY (`cedula_dec`) REFERENCES `decanos` (`cedula`);
 
 --
--- Filtros para la tabla `inscripcion`
+-- Constraints for table `inscripcion`
 --
 ALTER TABLE `inscripcion`
   ADD CONSTRAINT `inscripcion_ibfk_1` FOREIGN KEY (`codigo_asi2`) REFERENCES `asignaturas` (`codigo`),
