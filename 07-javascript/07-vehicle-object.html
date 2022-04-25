@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle object</title>
+    <link rel="stylesheet" href="css/menu.css">
+    <style>
+        main {
+            background: url(images/vehicle/bg-light.svg) no-repeat center ;
+            border: none;
+        }
+
+        header a:link,
+        header a:visited {
+            color: #fadf38 ;
+            top: 50px;
+        }
+
+        section {
+            position: relative;
+        }
+
+        section button.btnDarkMode {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            left: 347px;
+            top: 45px;
+            border: none;
+            background: url(images/vehicle/btn-darkmode.svg);
+            text-indent: -9999px;
+            transition: transform 0.5s ease;
+            
+        }
+
+        section button.btnDarkMode:hover {
+            transform: scale(1.1);
+        }
+
+        section ul.attributes {
+            position: absolute;
+            list-style: none;
+            color: black;
+        }
+        
+        section ul li.brand {
+            position: absolute;
+            top: 168px;
+            left: 50px;
+        }
+
+        section ul li.refer {
+            position: absolute;
+            top: 168px;
+            left: 270px;
+        }
+        section ul li.model {
+            position: absolute;
+            top: 243px;
+            left: 60px;
+        }
+
+        section ul li.color {
+            position: absolute;
+            top: 243px;
+            left: 260px;
+        }
+        
+        section ul.attributes li {
+           
+            width: 150px;
+            color: #fadf38;
+            font-family: 'Inter';
+            font-weight: 900;
+            font-size: 18px;
+            
+        }
+
+        figure.landscape{
+            background-color: #fadf38 ;
+            position: absolute;
+            width: 379px;
+            height: 260px;
+            left: -22px;
+            top: 292px;
+        }
+
+        nav.changevehicle {
+            
+            position: absolute;
+            top: 400px;
+            left: 17px;
+
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+            width: 382px;
+            z-index: 9;
+        }
+        nav.changevehicle button {
+            width: 36px;
+            height: 68px;
+            border: none;
+            text-indent: -9999px;
+            transition: transform 0.2s ease;
+            cursor: pointer;
+
+        }
+        nav.changevehicle button.left {
+            background: url(images/vehicle/btn-left.svg) no-repeat center;
+        }
+
+        nav.changevehicle button.right {
+            background: url(images/vehicle/btn-right.svg) no-repeat center;
+        }
+
+        nav.changevehicle button.left:hover {
+            transform: translateX(-3px);
+        }
+        nav.changevehicle button.right:hover {
+            transform: translateX(3px);
+        }
+        nav.controls {
+            position: absolute;
+            width: 379px;
+            top: 366px;
+            left: 20px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                px;
+
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+        }
+
+        nav.controls button {
+            border: none;
+            height: 40px;
+            text-indent: -9999px;
+            transition: transform 0.2s ease;
+            width: 45px;
+            background-size: contain;
+        }
+
+        nav.controls button.btnstart {
+            background: url(images/vehicle/btn-play.svg) no-repeat center;
+        }
+
+        nav.controls button.btnforward {
+            background: url(images/vehicle/btn-stop.svg) no-repeat center;
+        }
+        nav.controls button.btnstop {
+            background: url(images/vehicle/btn-forward.svg) no-repeat center;
+        }
+        nav.controls button.btnbackward {
+            background: url(images/vehicle/btn-backward.svg) no-repeat center;
+        }
+        nav.controls button.btnturnoff {
+            background: url(images/vehicle/btn-quite.svg) no-repeat center;
+            
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <a href="index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z" clip-rule="evenodd" />
+                </svg>
+            </a>
+           
+        </header>
+        <section>
+            <button class="btnDarkMode"> Dark Mode</button>
+            <ul class="attributes">
+                <li class="brand">Mazda</li>
+                <li class="refer">CX-9</li>
+                <li class="model">2020</li>
+                <li class="color">White</li>
+            </ul>
+            <figure class="landscape">
+
+            </figure>
+            <nav class="changevehicle">
+                <button class="left">left</button>
+                <button class="right">right</button>
+            </nav>
+            <nav class="controls">
+                <button class="btnstart">start</button>
+                <button class="btnforward">forward</button>
+                <button class="btnstop">stop</button>
+                <button class="btnbackward">backward</button>
+                <button class="btnturnoff">turnoff</button>
+            </nav>
+        </section>
+    </main>
+</body>
+</html>
