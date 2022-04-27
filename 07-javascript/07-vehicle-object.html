@@ -144,7 +144,7 @@
         }
 
         nav.controls button.btnstart {
-            background: url(images/vehicle/btn-play.svg) no-repeat center;
+            background: url(images/vehicle/btn-start.svg) no-repeat center;
         }
 
         nav.controls button.btnforward {
@@ -157,7 +157,7 @@
             background: url(images/vehicle/btn-backward.svg) no-repeat center;
         }
         nav.controls button.btnturnoff {
-            background: url(images/vehicle/btn-quite.svg) no-repeat center;
+            background: url(images/vehicle/btn-turnoff.svg) no-repeat center;
             
         }
     </style>
@@ -196,5 +196,57 @@
             </nav>
         </section>
     </main>
+    <script>
+        // Elements
+        const main = document.querySelector('main')
+        //Buttons
+        const btndarkmode = document.querySelector('button.btndarkmode')
+        //Atributes
+        const brand = document.querySelector('li.brand')
+        const refer = document.querySelector('li.refer')
+        const model = document.querySelector('li.model')
+        const color = document.querySelector('li.color')
+        //Object
+        const vehicle = {
+            attributes: [
+                { brand: 'Mazda',  refer: 'CX-9',  model: 2020, color: 'White', image: '' },
+                { brand: 'BMW', refer: 'X6',   model: 2018, color: 'black',   image: '' },
+                { brand: 'wolkswagen',    refer: 'gol', model: 2016, color: 'yellow', image: '' },
+                { brand: 'hyundai',    refer: 'Eon',    model: 2015, color: 'Black',  image: '' }
+            ],
+            // Methods
+            showAttributes: function()  {
+                brand.innerText = this.attributes[0].brand
+                refer.innerText = this.attributes[0].refer
+                model.innerText = this.attributes[0].model
+                color.innerText = this.attributes[0].color
+            },
+            darkMode: function() {
+                main.classList.toggle('darkmode')
+            },
+            start: function() {
+                alert('Start')
+            },
+            forWard: function() {
+                alert('ForWard')
+            },
+            stop: function() {
+                alert('Stop')
+            },
+            backWard: function() {
+                alert('BackWard')
+            },
+            turnOff: function() {
+                alert('Turn Off')
+            }
+        }
+        // - - - 
+        vehicle.showAttributes()
+        // Actions
+        btnDarkMode.onclick = () => {
+            vehicle.darkMode()
+        }
+            
+    </script>
 </body>
 </html>
