@@ -11,13 +11,31 @@
             background: url(images/vehicle/bg-light.svg) no-repeat center ;
             border: none;
         }
+        /*DarkMode*/
+        main.darkmode section button.btDarkMode {
+            background: url(images/vehicle/btn-lightmode.svg) no-repeat center;
 
+        }
+        main.darkmode {
+            background: url(images/vehicle/bg-dark.svg) no-repeat center;
+        }
+        main.darkmode section ul.attributes li {
+            color: #000;
+        }
+        main.darkmode header a:link,
+        main.darkmoe header a:visited {
+            background: #fff;
+            border-radius: 50px;
+            color: #fadf38;
+            top: 25px;
+        }
+        /*-----*/
         header a:link,
         header a:visited {
             color: #fadf38 ;
             top: 50px;
         }
-
+        /*btn-darkmode*/
         section {
             position: relative;
         }
@@ -92,7 +110,7 @@
             position: absolute;
             top: 400px;
             left: 17px;
-
+            /*FLEX*/
             display: flex;
             flex-direction: row;
             align-items: flex-start;
@@ -173,6 +191,7 @@
            
         </header>
         <section>
+            <!--Button DarkMode-->
             <button class="btnDarkMode"> Dark Mode</button>
             <ul class="attributes">
                 <li class="brand">Mazda</li>
@@ -180,6 +199,7 @@
                 <li class="model">2020</li>
                 <li class="color">White</li>
             </ul>
+            <!--Image-->
             <figure class="landscape">
 
             </figure>
@@ -187,6 +207,8 @@
                 <button class="left">left</button>
                 <button class="right">right</button>
             </nav>
+
+            <!--Controls-->
             <nav class="controls">
                 <button class="btnstart">start</button>
                 <button class="btnforward">forward</button>
