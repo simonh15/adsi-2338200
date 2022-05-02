@@ -12,7 +12,7 @@
             border: none;
         }
         /*DarkMode*/
-        main.darkmode section button.btDarkMode {
+        main.darkmode section button.btnDarkMode {
             background: url(images/vehicle/btn-lightmode.svg) no-repeat center;
 
         }
@@ -222,7 +222,7 @@
         // Elements
         const main = document.querySelector('main')
         //Buttons
-        const btndarkmode = document.querySelector('button.btndarkmode')
+        const btnDarkMode = document.querySelector('button.btnDarkMode')
         //Atributes
         const brand = document.querySelector('li.brand')
         const refer = document.querySelector('li.refer')
@@ -244,6 +244,7 @@
                 color.innerText = this.attributes[0].color
             },
             darkMode: function() {
+                
                 main.classList.toggle('darkmode')
             },
             start: function() {
