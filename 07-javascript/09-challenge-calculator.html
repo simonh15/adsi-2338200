@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Calculator</title>
+    <link rel="stylesheet" href="css/menu.css">
+    <style>
+        header h1 {
+            font-size: 1.4rem;
+            line-height: 3.7rem;
+        }
+
+        a {
+            top: -10px;
+        }
+
+        div.calculator {
+            margin: 40px auto;
+            width: 352px;
+        }
+
+        header.display {
+            background: url(images/calc/display.svg) no-repeat center;
+            width: 352px;
+            background-size: contain;
+            height: 130px;
+        }
+        header.display input.value {
+            background: none;
+            border: 0;
+            outline: none;
+            color: white;
+            font-style: normal;
+            font-size: 20px;
+            position: absolute;
+            text-align: right;
+            right: 30px;
+            top: 50px;
+            width: 17.6rem;
+        }
+
+        section.buttons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+            margin: 10px 0;
+            row-gap: 7px;
+            column-gap: 24px;
+            background-size: contain;
+
+        }
+
+        section.buttons button {
+            height: 70px;
+            border: none;
+            width: 70px;
+            transition: 0.1s ease-in;
+            cursor: pointer;
+        }
+
+        section.buttons button:hover {
+            transform: scale(1.10);
+        }
+
+        button.btn-clear {
+            background: url(images/calc/btn-clear.svg)no-repeat center;
+        }
+
+        button.btn-back {
+            background: url(images/calc/btn-back.svg)no-repeat center;
+        }
+
+        button.btn-exp {
+            background: url(images/calc/btn-exp.svg)no-repeat center;
+        }
+        
+        button.btn-mod {
+            background: url(images/calc/btn-mod.svg)no-repeat center;
+        }
+
+        button.btn-1 {
+            background: url(images/calc/btn-1.svg)no-repeat center;
+        }
+
+        button.btn-2 {
+            background: url(images/calc/btn-2.svg)no-repeat center;
+        }
+
+        button.btn-3 {
+            background: url(images/calc/btn-3.svg)no-repeat center;
+        }
+
+        button.btn-4 {
+            background: url(images/calc/btn-4.svg)no-repeat center;
+        }
+
+        button.btn-5 {
+            background: url(images/calc/btn-5.svg)no-repeat center;
+        }
+
+        button.btn-6 {
+            background: url(images/calc/btn-6.svg)no-repeat center;
+        }
+
+        button.btn-7 {
+            background: url(images/calc/btn-7.svg)no-repeat center;
+        }
+
+        button.btn-8 {
+            background: url(images/calc/btn-8.svg)no-repeat center;
+        }
+
+        button.btn-9 {
+            background: url(images/calc/btn-9.svg)no-repeat center;
+        }
+
+        button.btn-0 {
+            background: url(images/calc/btn-0.svg)no-repeat center;
+        }
+
+        button.btn-multiplication {
+            background: url(images/calc/btn-multiplication.svg)no-repeat center;
+        }
+
+        button.btn-rest {
+            background: url(images/calc/btn-rest.svg)no-repeat center;
+        }
+
+        button.btn-sum {
+            background: url(images/calc/btn-sum.svg)no-repeat center;
+        }
+
+        button.btn-div {
+            background: url(images/calc/btn-div.svg)no-repeat center;
+        }
+
+        button.btn-point {
+            background: url(images/calc/btn-point.svg)no-repeat center;
+        }
+
+        button.btn-equal {
+            background: url(images/calc/btn-equal.svg)no-repeat center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <a href="index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z" clip-rule="evenodd" />
+                </svg>
+            </a>
+            <h1>Challenge Calculator</h1>
+        </header>
+        <section>
+            <div class="calculator">
+                <header class="display"> 
+                    <input type="text" class="value" readonly>
+                </header>
+                 
+                <section class="buttons">
+                    <button class="btn-clear"></button>
+                    <button class="btn-back"></button>
+                    <button class="btn-exp"            data-opr = "^"></button>
+                    <button class="btn-mod"            data-opr = "%"></button>
+                    <button class="btn-1"              data-num = "1"></button>
+                    <button class="btn-2"              data-num = "2"></button>
+                    <button class="btn-3"              data-num = "3"></button>
+                    <button class="btn-multiplication" data-opr = "*"></button>
+                    <button class="btn-4"              data-num = "4"></button>
+                    <button class="btn-5"              data-num = "5"></button>
+                    <button class="btn-6"              data-num = "6"></button>
+                    <button class="btn-rest"           data-opr = "-"></button>
+                    <button class="btn-7"              data-num = "7"></button>
+                    <button class="btn-8"              data-num = "8"></button>
+                    <button class="btn-9"              data-num = "9"></button>
+                    <button class="btn-sum"            data-opr = "+"></button>
+                    <button class="btn-div"            data-opr = "/"></button>
+                    <button class="btn-0"              data-num = "0"></button>
+                    <button class="btn-point"          data-opr = "."></button>
+                    <button class="btn-equal"                        ></button>
+                </section>
+            </div>
+        </section>
+    </main>
+    <script>
+        //display
+        const display = document.querySelector('input.value')
+        //buttons
+        const btnClear = document.querySelector('button.btn-clear')
+        const btnBack = document.querySelector('button.btn-back')
+        const btnEqual = document.querySelector('button.btn-equal')
+
+        // all numbers & operators
+
+        const btnsNumbers    = document.querySelectorAll('button[data-num]')
+        const btnsOperators  = document.querySelectorAll('button[data-opr]')
+       
+
+        // logic value 
+
+        var operStatus = false
+
+        // activate click event in all numbers & operators
+
+        for (let i = 0; i < btnsNumbers.length; i++) {
+            btnsNumbers[i].onclick = function()  {
+                operStatus = true
+                addToDisplay(this.getAttribute('data-num'))
+            };
+          
+        }
+
+        for (let i = 0; i < btnsOperators.length; i++) {
+            btnsOperators[i].onclick = function()  {
+                if(operStatus) {
+                    addToDisplay(this.getAttribute('data-opr'))
+                    operStatus = false
+                }
+                
+            };
+          
+        }
+
+        //EVENTS
+        document.onkeyup = (evt) => {
+            //console.log(evt.keycode)^
+            // clear = 46
+            // 0-9 = 96-97-98-99-100-101-102-103-104-105
+            // 0-9 = 48-49-50-51-52-53-54-55-56-57
+            // back = 8
+            // % = 53
+            // - = 109 / 189
+            // + = 107 / 187
+            // * = 187 / 106
+            // / = 55 / 111
+            // . = 190 / 110
+            // ^ = 222
+            //alert(evt.keyCode)
+            switch (evt.keyCode) {
+
+                case 46:
+                    clearDisplay()
+
+                case 222: 
+                    if(evt.ctrlKey && evt.altKey){
+                        if(operStatus) {
+                            addToDisplay('^')
+                            operStatus = false
+                        }
+                    }
+                    break;
+
+                case 190:
+                case 110:
+                    if(operStatus) {
+                            addToDisplay('.')
+                            operStatus = false
+                        }
+                    break;
+
+                case 8:
+                    deleteLastValue()
+                    break;
+
+                case 53:
+                    if(evt.shiftKey){
+                        if(operStatus) {
+                            addToDisplay('%')
+                            operStatus = false
+                        }
+                    } else {
+                        addToDisplay(5)
+                        operStatus = true
+                    }
+                    break;
+
+                case 107:
+                    if(operStatus) {
+                            addToDisplay('+')
+                            operStatus = false
+                        }
+                    break;
+
+                case 187:
+                    if(evt.shiftKey){
+                        if(operStatus) {
+                            addToDisplay('*')
+                            operStatus = false
+                        }
+                    } else {
+                        if(operStatus) {
+                            addToDisplay('+')
+                            operStatus = false
+                        }
+                    }
+                    break;
+
+                case 106:
+                    if(operStatus) {
+                            addToDisplay('*')
+                            operStatus = false
+                        }
+                        break;
+
+                case 55:
+                    if(evt.shiftKey){
+                        if(operStatus) {
+                            addToDisplay('/')
+                            operStatus = false
+                        }
+                        
+                    } else {
+                        addToDisplay(7)
+                        operStatus = true
+                    }
+                    break;
+
+                case 111: 
+                    if(operStatus) {
+                            addToDisplay('/')
+                            operStatus = false
+                        }
+                        break;
+                  
+                 
+                case 189:
+                case 109:
+                    if(operStatus) {
+                            addToDisplay('-')
+                            operStatus = false
+                        }
+                    break;
+
+                case 48:
+                case 96:
+                    addToDisplay(0)
+                    operStatus = true
+                    break;
+
+                case 49:
+                case 97:
+                    addToDisplay(1)
+                    operStatus = true
+                    break;
+                
+                case 50:
+                case 98:
+                    addToDisplay(2)
+                    operStatus = true
+                    break;
+
+                case 51:
+                case 99:
+                    addToDisplay(3)
+                    operStatus = true
+                    break;
+
+                case 52:
+                case 100:
+                    addToDisplay(4)
+                    operStatus = true
+                    break;
+                
+                case 101:
+                    addToDisplay(5)
+                    operStatus = true
+                    break;
+
+                case 54:
+                case 102:
+                    addToDisplay(6)
+                    operStatus = true
+                    break;
+                
+                case 103:
+                    addToDisplay(7)
+                    operStatus = true
+                    break;
+
+                case 56:
+                case 104:
+                    addToDisplay(8)
+                    operStatus = true
+                    break; 
+
+                case 57:
+                case 105:
+                    addToDisplay(9)
+                    operStatus = true
+                    break;
+            }
+        }
+
+        btnClear.onclick = () => {
+            clearDisplay()
+        }
+
+        btnBack.onclick = () => {
+            deleteLastValue()
+        }
+          
+      
+
+        
+        //functions 
+        function clearDisplay() {
+            display.value = ''
+        }
+        function deleteLastValue() {
+            display.value = display.value.slice(0, -1)
+            if (isNaN(display.value.slice(-1))) {
+                operStatus = false 
+            } else {
+                operStatus = true 
+        }
+        }
+           
+
+        function addToDisplay(c) {
+            if(validateLength()) {
+                display.value += c
+            }
+        }
+
+        function validateLength() {
+            if(display.value.length < 25) {
+                return true
+            }else {
+                return false
+            }
+        }
+
+
+    </script>
+</body>
+</html>
