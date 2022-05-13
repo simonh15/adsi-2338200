@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comparison</title>
+    <title>Logical</title>
     <link rel="stylesheet" href="css/menu.css">
     <style>
 
@@ -56,13 +56,16 @@
                     <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z" clip-rule="evenodd" />
                 </svg>
             </a>
-            <h1>Comparison</h1>
+            <h1>Logical</h1>
         </header>
         <section>
             <table class="operators">
                 <thead>
                     <tr>
-                        <th colspan="5"><input type="number" placeholder="X Value"></th>
+                        <th colspan="4">
+                            <input type="number" placeholder="X Value">
+                            <input type="number" placeholder="Y Value">
+                        </th>
                     </tr>
                     <tr>
                         <th>Operator</th>
@@ -98,40 +101,50 @@
     <script>
         //results
         const rss    = document.querySelectorAll('td.rs')
-        const input = document.querySelector('input')
+        const input  = document.querySelectorAll('input')
         //events
-        input.oninput = () => {
-            if (input.value != ''){
-                if(input.value.length < 4) {
-                    // ==
-                    rss[0].innerText = ( parseInt(input.value) == 8 )
+        input[0].oninput = () => {
+            if (input[0].value != '' && input[1].value != ''){
+                if(input[1].value.length < 4) {
+                    // &&
+                    rss[0].innerText = ( parseInt(input[0].value) < 10 &&
+                                         parseInt(input[1].value) > 1 )
 
-                    // ===
-                    rss[1].innerText = ( parseInt(input.value) === 5 )
+                    // ||
+                    rss[1].innerText = ( parseInt(input[0].value) == 5 ||
+                                         parseInt(input[1].value) == 5 )
 
-                    // !=
-                    rss[2].innerText = ( parseInt(input.value) != 8 )
-
-                    // !===
-                    rss[3].innerText = ( parseInt(input.value) !== 5 )
-
-                    // >
-                    rss[4].innerText = ( parseInt(input.value) > 8 )
-
-                    // <
-                    rss[5].innerText = ( parseInt(input.value) < 8 )
-
-                    // >=
-                    rss[6].innerText = ( parseInt(input.value) >= 8 )
-
-                    // <=
-                    rss[7].innerText = ( parseInt(input.value) <= 8 )
-
-                  
-
+                    // !
+                    rss[2].innerText = !( parseInt(input[0].value) == 
+                                         parseInt(input[1].value))
                    
                 } else {
-                    input.value = input.value.slice(0, -1)
+                    input[0].value = input[0].value.slice(0, -1)
+                }
+
+            } else {
+                for (let i = 0; i < rss.length; i++) {
+                    rss[i].innerText = ''
+                }
+            } 
+        }
+        input[1].oninput = () => {
+            if (input[0].value != '' && input[1].value != ''){
+                if(input[1].value.length < 4) {
+                    // &&
+                    rss[0].innerText = ( parseInt(input[0].value) < 10 &&
+                                         parseInt(input[1].value) > 1 )
+
+                    // ||
+                    rss[1].innerText = ( parseInt(input[0].value) == 5 ||
+                                         parseInt(input[1].value) == 5 )
+
+                    // !
+                    rss[2].innerText = !( parseInt(input[0].value) == 
+                                         parseInt(input[1].value))
+                   
+                } else {
+                    input[1].value = input[1].value.slice(0, -1)
                 }
 
             } else {
