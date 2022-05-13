@@ -24,8 +24,8 @@
         header.display {
             background: url(images/calc/display.svg) no-repeat center;
             width: 352px;
-            background-size: contain;
             height: 130px;
+            top: -20px;
         }
         header.display input.value {
             background: none;
@@ -45,7 +45,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
             margin: 10px 0;
-            row-gap: 7px;
+            row-gap: 10px;
             column-gap: 24px;
             background-size: contain;
 
@@ -240,8 +240,13 @@
             // / = 55 / 111
             // . = 190 / 110
             // ^ = 222
+            // = = 13
             //alert(evt.keyCode)
             switch (evt.keyCode) {
+
+                case 13:
+                    btnEqual.onclick()
+                    break;
 
                 case 46:
                     clearDisplay()
@@ -404,6 +409,16 @@
             deleteLastValue()
         }
           
+        btnEqual.onclick = () => {
+
+
+            var operacion = display.value;
+            if(operacion.trim() != '' ){
+                operacion = operacion.replace ('^' , '**');
+                operacion = eval(operacion)
+                display.value = operacion
+            }
+        }
       
 
         
