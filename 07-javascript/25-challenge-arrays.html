@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenger Arrays</title>
+    <link rel="stylesheet" href="css/menu.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <style>
+    main {
+        border: none;
+        background: url(images/array/mackup-array.svg) no-repeat center;
+    }
+    /*title1*/
+
+    div.title1 {
+        background: url(images/array/TITLE1.svg);
+        position: relative;
+        width: 245px;
+        height: 31px;
+        top: 170px;
+        border: solid 2px red;
+    }
+
+    /*character*/
+    div.gaara {
+        background: url(images/array/GAARA.svg);
+        position: relative;
+        width: 90px;
+        height: 90px;
+        top: 180px;
+        left: 30px;
+        border: solid 2px red;
+        cursor: pointer;
+    }
+
+    div.naruto {
+        background: url(images/array/NARUTO.svg);
+        position: relative;
+        width: 90px;
+        height: 90px;
+        top: 86px;
+        left: 160px;
+        border: solid 2px red;
+        cursor: pointer;
+    }
+
+    div.itachi  {
+        background: url(images/array/ITACHI.svg);
+        position: relative;
+        width: 90px;
+        height: 90px;
+        top: -8px;
+        left: 290px;
+        border: solid 2px red;
+        cursor: pointer;
+    }
+
+    div.orochimaru {
+        background: url(images/array/OROCHIMARU.svg);
+        position: relative;
+        width: 90px;
+        height: 90px;
+        top: 0px;
+        left: 30px;
+        cursor: pointer;
+        border: solid 2px red;
+    }
+
+    div.jiraiya {
+        background: url(images/array/JIRAIYA.svg);
+        position: relative;
+        width: 90px;
+        height: 90px;
+        top: -94px;
+        left: 160px;
+        cursor: pointer;
+        border: solid 2px red;
+    }
+
+    div.nagato {
+        background: url(images/array/NAGATO.svg);
+        position: relative;
+        width: 90px;
+        height: 90px;
+        top: -187px;
+        left: 290px;
+        cursor: pointer;
+        
+    }
+  </style>
+</head>
+<body>
+    <main>
+        <header>
+            <a href="index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z" clip-rule="evenodd" />
+                </svg>
+            </a>
+            
+        </header>
+        <section>
+            <!--title1-->
+            <div class="title1"></div>
+
+            <!--title2-->
+            <div class="title2"></div>
+
+            <!--title3-->
+            <div class="title3"></div>
+
+            <!--SELECT YOUR CHARACTER-->
+            <div class="character">
+                <div class="gaara       character animate_animated animate_infinite "></div>
+                <div class="naruto      character animate_animated animate_infinite "></div>
+                <div class="itachi      character animate_animated animate_infinite "></div>
+                <div class="orochimaru  character animate_animated animate_infinite "></div>
+                <div class="jiraiya     character animate_animated animate_infinite "></div>
+                <div class="nagato      character animate_animated animate_infinite "></div>
+            </div>
+        </section>
+    </main>
+    <script>
+        //ELEMENTOS
+        const character = document.querySelectorAll('.character')
+
+        character.forEach(element => {
+            element.addEventListener('click', (e) => {
+                removeAnimation()
+                element.classList.add(animate__pulse)
+            })
+        })
+
+        function removeAnimation(){
+            character.forEach(element => {
+                element.classList.remove('actived' , 'animate__pulse')
+            })
+        }
+    </script>
+</body>
+</html>
