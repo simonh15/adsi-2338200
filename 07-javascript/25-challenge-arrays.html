@@ -116,8 +116,9 @@
 
      section nav.options input[type=checkbox],
      section nav.options input[type=number]{
-          -webkit-appearance: none;
+            -webkit-appearance: none;
             cursor: pointer;
+            border: none;
             text-align: center;
             outline: none;
             background: url(images/array/btn-position.svg) no-repeat center;
@@ -169,10 +170,8 @@
         height: 31px;
         top: 485px;
         left: -2px;
+        }
         
-    }
-
-
         section figure.result{
             display: flex;
             flex-direction: row;
@@ -193,22 +192,22 @@
             border-radius: 20px;
            
         }
-        section div.food1{
+        section div.character1{
             background: url(images/array/GAARA.svg) no-repeat center;
         }
-        section div.food2{
+        section div.character2{
             background: url(images/array/NARUTO.svg) no-repeat center;
         }
-        section div.food3{
+        section div.character3{
             background: url(images/array/ITACHI.svg) no-repeat center;
         }
-        section div.food4{
+        section div.character4{
             background: url(images/array/OROCHIMARU.svg) no-repeat center;
         }
-        section div.food5{
+        section div.character5{
             background: url(images/array/JIRAIYA.svg) no-repeat center;
         }
-        section div.food6{
+        section div.character6{
             background: url(images/array/NAGATO.svg) no-repeat center;
         }
 
@@ -278,11 +277,15 @@
         var slt_action        = 'add' 
         var array_character   = []
 
+        //var creada para valorar el estado de slt_position
+        var check = true
+
         //Animation character
 
         character.forEach(element => {
             element.addEventListener('click', (e) => {
                 removeAnimation()
+                alert()
                 slt_character = 'character' + (index+1)
                 element.classList.add('actived' , 'animate__pulse')
             })
@@ -294,14 +297,15 @@
             })
         }
 
-        sw_action.addEventListener('click', (e) =>{
-            if (sw_action.checked == true){
+        sw_position.addEventListener('click', (e) =>{
+            if (check == false){
                 slt_position = 'first'
+                check = true
             }else{
                 slt_position = 'last'
+                check = false
             }
         })
-
         sw_action.addEventListener('click', (e) =>{
             if (sw_action.checked == true){
                 slt_action = 'remove'
@@ -323,7 +327,7 @@
                         array_character.push(slt_character)
                     }
                 }else{
-                    if(slt_position == 'last'){
+                    if(slt_position == 'first'){
                         array_character.shift()
                     }else{
                         array_character.pop()
@@ -333,7 +337,7 @@
                  // alert(array_character)
                  result.innerHTML = ''
                 for (let i = 0; i < array_character.length; i++) {
-                    result.innerHTML += '<div class="'+array_character[i]+'"><span>'+i+'</span></div>'
+                    result.innerHTML += '<div class="animate_bounceInUp animate_animated '+array_character[i]+'"><span>'+i+'</span></div>'
                     
                 }
             }else{
