@@ -22,76 +22,203 @@
         position: relative;
         width: 245px;
         height: 31px;
-        top: 170px;
-        border: solid 2px red;
+        top: 160px;
     }
 
     /*character*/
+
     div.gaara {
-        background: url(images/array/GAARA.svg);
+        background: url(images/array/GAARA.svg)no-repeat center;
         position: relative;
         width: 90px;
         height: 90px;
-        top: 180px;
+        top: 110px;
         left: 30px;
-        border: solid 2px red;
         cursor: pointer;
     }
 
     div.naruto {
-        background: url(images/array/NARUTO.svg);
+        background: url(images/array/NARUTO.svg)no-repeat center;
         position: relative;
         width: 90px;
         height: 90px;
-        top: 86px;
+        top: 20px;
         left: 160px;
-        border: solid 2px red;
         cursor: pointer;
     }
 
     div.itachi  {
-        background: url(images/array/ITACHI.svg);
+        background: url(images/array/ITACHI.svg)no-repeat center;
         position: relative;
         width: 90px;
         height: 90px;
-        top: -8px;
+        top: -70px;
         left: 290px;
-        border: solid 2px red;
         cursor: pointer;
     }
 
     div.orochimaru {
-        background: url(images/array/OROCHIMARU.svg);
+        background: url(images/array/OROCHIMARU.svg)no-repeat center;
         position: relative;
         width: 90px;
         height: 90px;
-        top: 0px;
+        top: -60px;
         left: 30px;
         cursor: pointer;
-        border: solid 2px red;
+        
     }
 
     div.jiraiya {
-        background: url(images/array/JIRAIYA.svg);
+        background: url(images/array/JIRAIYA.svg)no-repeat center;
         position: relative;
         width: 90px;
         height: 90px;
-        top: -94px;
+        top: -150px;
         left: 160px;
         cursor: pointer;
-        border: solid 2px red;
+        
     }
 
     div.nagato {
-        background: url(images/array/NAGATO.svg);
+        background: url(images/array/NAGATO.svg) no-repeat center;
         position: relative;
         width: 90px;
         height: 90px;
-        top: -187px;
+        top: -240px;
         left: 290px;
         cursor: pointer;
         
     }
+    
+    /*title2*/
+
+    div.title2 {
+        background: url(images/array/TITLE2.svg) no-repeat center;
+        position: relative;
+        width: 230px;
+        height: 33px;
+        top: 380px;
+        left: -2px;
+        
+    }
+
+    /*BTN*/
+
+    section nav.options{
+            margin-top: -180px;
+            display: flex;
+            flex-direction: row;
+            height: 37px;
+            overflow: hidden;
+            margin-left: 30px;
+            
+        }
+
+     section nav.options input[type=checkbox],
+     section nav.options input[type=number]{
+          -webkit-appearance: none;
+            cursor: pointer;
+            text-align: center;
+            outline: none;
+            background: url(images/array/btn-position.svg) no-repeat center;
+            width: 98px;
+            height: 37px;
+            transition: background 0.4s ease-in;
+        }
+
+        section nav.options input[type=checkbox].position{
+            background: url(images/array/btn-first.svg) no-repeat center;
+        }
+        section nav.options input[type=checkbox].position:checked{
+            background: url(images/array/btn-last.svg) no-repeat center;
+        }
+        section nav.options input[type=checkbox].action{
+            background: url(images/array/btn-add.svg) no-repeat center;
+        }
+        section nav.options input[type=checkbox].action:checked{
+            background: url(images/array/btn-remove.svg) no-repeat center;
+        }
+
+        section button{
+            display: flex;
+            margin:  auto;
+            margin-top: 10px;
+            border: none;
+            width: 40px;
+            height: 40px;
+            transition: all 0.5s ease-in;
+            cursor: pointer;
+        }
+
+        section button:hover{
+            transform: scale(1.3);
+        }
+        section button.btn-add{
+            background: url(images/array/btn-plus.svg) no-repeat center;
+        }
+        section button.btn-remove{
+            background: url(images/array/btn-minus.svg) no-repeat center;
+        }
+
+        /*TITLE3*/
+
+        div.title3 {
+        background: url(images/array/TITLE3.svg) no-repeat center;
+        position: relative;
+        width: 230px;
+        height: 31px;
+        top: 485px;
+        left: -2px;
+        
+    }
+
+
+        section figure.result{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 380px;
+            margin: auto;
+            gap: 30px;
+            overflow: hidden;
+            height: 81px;
+            margin-top: 50px;
+            border: 2px solid black;
+            overflow-x: auto;
+        }
+        section figure.result div{
+            height: 90px;
+            width: 90px;
+            border-radius: 20px;
+           
+        }
+        section div.food1{
+            background: url(images/array/GAARA.svg) no-repeat center;
+        }
+        section div.food2{
+            background: url(images/array/NARUTO.svg) no-repeat center;
+        }
+        section div.food3{
+            background: url(images/array/ITACHI.svg) no-repeat center;
+        }
+        section div.food4{
+            background: url(images/array/OROCHIMARU.svg) no-repeat center;
+        }
+        section div.food5{
+            background: url(images/array/JIRAIYA.svg) no-repeat center;
+        }
+        section div.food6{
+            background: url(images/array/NAGATO.svg) no-repeat center;
+        }
+
+        section figure.result div span{
+            background-color: #00000099;
+            font-size: 1.3rem;
+            padding: 0px;
+            border-radius: 30px;
+        }
+
   </style>
 </head>
 <body>
@@ -123,16 +250,41 @@
                 <div class="jiraiya     character animate_animated animate_infinite "></div>
                 <div class="nagato      character animate_animated animate_infinite "></div>
             </div>
+
+            <!--SELECT POSITION-->
+            <nav class="options">
+                <input  class="position"  type="checkbox" >
+                <input  class="action"    type="checkbox" >
+                <input  class="nposition" type="number"  placeholder="positions" min="0" max="99">
+            </nav>
+            <button class=" btn btn-add"></button>     
+            <figure class="result"> 
+                
+            </figure>
+
         </section>
     </main>
     <script>
         //ELEMENTOS
-        const character = document.querySelectorAll('.character')
+        const character     = document.querySelectorAll ('.character')
+        const sw_action     = document.querySelector    ('.action')
+        const sw_position   = document.querySelector    ('.position')
+        const btn_action    = document.querySelector    ('.btn')
+        const result        = document.querySelector    ('.result')
+
+        //Global Variable
+        var slt_character     = null
+        var slt_position      = 'first'
+        var slt_action        = 'add' 
+        var array_character   = []
+
+        //Animation character
 
         character.forEach(element => {
             element.addEventListener('click', (e) => {
                 removeAnimation()
-                element.classList.add(animate__pulse)
+                slt_character = 'character' + (index+1)
+                element.classList.add('actived' , 'animate__pulse')
             })
         })
 
@@ -141,6 +293,55 @@
                 element.classList.remove('actived' , 'animate__pulse')
             })
         }
+
+        sw_action.addEventListener('click', (e) =>{
+            if (sw_action.checked == true){
+                slt_position = 'first'
+            }else{
+                slt_position = 'last'
+            }
+        })
+
+        sw_action.addEventListener('click', (e) =>{
+            if (sw_action.checked == true){
+                slt_action = 'remove'
+                btn_action.classList.remove('btn-add')
+                btn_action.classList.add('btn-remove')
+            }else{
+                slt_action = 'add'
+                btn_action.classList.remove('btn-remove')
+                btn_action.classList.add('btn-add')
+            }
+        })
+
+        btn_action.addEventListener('click', (e) =>{
+            if(slt_character != null){
+                if(slt_action == 'add'){
+                    if(slt_position == 'first'){
+                        array_character.unshift(slt_character)
+                    }else{
+                        array_character.push(slt_character)
+                    }
+                }else{
+                    if(slt_position == 'last'){
+                        array_character.shift()
+                    }else{
+                        array_character.pop()
+                    }
+                }
+
+                 // alert(array_character)
+                 result.innerHTML = ''
+                for (let i = 0; i < array_character.length; i++) {
+                    result.innerHTML += '<div class="'+array_character[i]+'"><span>'+i+'</span></div>'
+                    
+                }
+            }else{
+                Swal.fire('Select character')
+            }  
+        })
+
+       
     </script>
 </body>
 </html>
