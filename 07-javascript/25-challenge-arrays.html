@@ -95,30 +95,27 @@
             border: 2px solid red;
             padding: 4px;
         }
-        /*.select{
-            position: relative;
-            left: 50px;
-            top: 15px;
-            border-radius:50px ;
-            width: 200px;
-            height: 100px;
-            text-align: center;
-            background-color: #00000090;
-            border: 2px solid red;
-        }*/
+        section nav.options{
+            margin-left: 50px;
+            display: flex;
+            flex-direction: row;
+            height: 34px;
+            margin-top: 200px;
+            overflow: hidden;
+        }
         
-        section nav.options input[type=checkbox],section nav.options input[type=number]{
+        section nav.options input[type=checkbox],
+        section nav.options input[type=number]{
             -webkit-appearance: none;
-            transition: all .4s ease;
             cursor: pointer;
-            height: 37px;
-            width: 98px;
-            top: 490px;
-            left: 60px;
-            position: absolute;
+            color: #EF4130;
             border: none;
-            background-color: white;
+            text-align: center;
             outline: none;
+            width: 86px;
+            height: 34px;
+            transition: background 0.4s ease-in;
+
 
         }
         section nav.options input[type=checkbox].position{
@@ -129,7 +126,6 @@
         }
         section nav.options input[type=checkbox].action{
             background: url(images/array/btn-add.svg)no-repeat center;
-            left: 190px;
             
         }
         section nav.options input[type=checkbox].action:checked{
@@ -137,22 +133,18 @@
         }
         section nav.options input[type=number].nposition{
             background: url(images/array/btn-position.svg)no-repeat center;
-            text-align: center;
-            left: 320px;
         }
         section button.btn_agregar{
             background: url(images/array/btn-plus.svg) no-repeat;
             width: 50px;
             height: 50px;
             margin: 0 auto;
-            top: -300px;
+            top: 10px;
             position: relative;
             border: none;
             left: -1px;
             display: flex;
-            cursor: pointer;
-            border: 2px solid red;
-            
+            cursor: pointer;         
         }
     
         .btn_remove{
@@ -160,35 +152,59 @@
             width: 50px;
             height: 50px;
             margin: 0 auto;
-            border:none;
-            top: -300px;
-            left: -1px;
+            top: 10px;
             position: relative;
+            border: none;
+            left: -1px;
             display: flex;
-            cursor: pointer;
+            cursor: pointer;   
             
         }
-        footer{
+        div.scroll{
             overflow-x: scroll;
-            position:relative;
-            left: 30px;
-            top:-290px;
-            width: 85%;
-            height: 120px;
-            border: 2px solid red;
-            
+            width: 415px;
         }
-        .result{
-            display: flex;
+        section figure.result{
+            display: inline-flex;
             flex-direction: row;
-            border: 2px soldid red;
-            width: 1000px;
-        }
-        .cartStyle{
-            height: 90px;
-            width: 90px;
-            border: 3px solid blue;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            margin:20px auto;
+            gap: 20px;
+            height: 70px;
+            margin-top: 0px auto ;
             
+        }
+        section figure.result div{
+            background-size: contain !important;
+            height: 70px;
+            width: 70px;
+            border-radius: 20px;
+        }
+        section div.cart1{
+            background: url(images/array/OROCHIMARU.svg) no-repeat center;
+        }
+        section div.cart2{
+            background: url(images/array/NARUTO.svg) no-repeat center;
+        }
+        section div.cart3{
+            background: url(images/array/NAGATO.svg) no-repeat center;
+        }
+        section div.cart4{
+            background: url(images/array/JIRAIYA.svg) no-repeat center;
+        }
+        section div.cart5{
+            background: url(images/array/ITACHI.svg) no-repeat center;
+        }
+        section div.cart6{
+            background: url(images/array/GAARA.svg) no-repeat center;
+        }
+        section figure.result div span{
+            background-color: #00000099;
+            font-size: 1.3rem;
+            padding: 0px;
+            border-radius: 30px;
         }
        
     </style>
@@ -223,17 +239,19 @@
                 <h1 class="select"></h1>
                 <nav class="options">
                     <input class="position" type="checkbox">
-                    <input class="action" type="checkbox">
+                    <input class="action"   type="checkbox">
                     <input class="nposition" type="number" min="0" max="99">
                 </nav>
                 <button class="btn_agregar"></button>
                 
             </section>
-            <footer class="footer">
-                <section class="result">
-
-                </section>
-            </footer>
+            <section>
+            <div class="scroll">
+                <figure class="result">
+    
+                </figure>
+            </div>
+        </section>
         </div>
     </main>
     <script>
@@ -275,7 +293,6 @@
             }
         })
         btn_agregar.onclick = () =>{
-            alert()
             if(nposition.value != ''){
                 if(agregar.checked != true){
                     var pushNode = result.childNodes[nposition.value]
@@ -290,7 +307,7 @@
             }else{
                     if(agregar.checked != true){
                         if(position.checked!= true){
-                            result.insertAdjacentHTML ('afterbegin', `<div class="${carts} cartStyle"></div>`)
+                            result.insertAdjacentHTML ('afterbegin', `<div class="${carts}"><span></span></div>`)
                         }else{
                             result.insertAdjacentHTML ('beforeend', `<div class="${carts} cartStyle"></div>`)
                         }
