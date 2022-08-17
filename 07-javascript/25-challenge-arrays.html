@@ -4,95 +4,210 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Challenger Arrays</title>
+    <title>Challengue Arrays</title>
     <link rel="stylesheet" href="css/menu.css">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-  <style>
-    main {
-        border: none;
-        background: url(images/array/mackup-array.svg) no-repeat center;
-    }
-    /*title1*/
+    <style>
+        /* *{
+            border: 2px solid red;
+        } */
+        main{
+            height: 724px;
+        }
+        .container{
+            background: url(images/array/mackup-array.svg) no-repeat center;
+            margin: 0 auto;
+            width: 420px;
+            height: 700px;
+            
+            
+        }
 
-    div.title1 {
-        background: url(images/array/TITLE1.svg);
-        position: relative;
-        width: 245px;
-        height: 31px;
-        top: 170px;
-        border: solid 2px red;
-    }
+        div.tittle1{
+            background: url(images/array/TITLE1.svg)no-repeat center;
+            width: 240px;
+            height: 31px;
+        }
+        article{
 
-    /*character*/
-    div.gaara {
-        background: url(images/array/GAARA.svg);
-        position: relative;
-        width: 90px;
-        height: 90px;
-        top: 180px;
-        left: 30px;
-        border: solid 2px red;
-        cursor: pointer;
-    }
+            display: grid;
+            grid-template-columns: repeat(4,80px);
+            left: 35px;
+            top: 180px;
+            position: relative;
+            gap: 13px;
+            
+            
+        }
+        .carta{
+            filter: grayscale(1);
+            height: 90px;
+            width: 90px;
+            cursor: pointer;
+            transition: all 0.3s ease-in;
+        }
+        .carta:hover{
+            filter: grayscale(0.0);
+            transform: scale(1.2);
+        }
+        .active{
+            filter: grayscale(0.0);
+            transform: scale(1.2);
+        }
+        .carta1{
+            background: url(images/array/NARUTO.svg)no-repeat;
+        }
+        .carta2{
+            background: url(images/array/GAARA.svg)no-repeat;
+            right: -40px;
+            position: relative;
+        }
+        .carta3{
+            background: url(images/array/ITACHI.svg)no-repeat;
+            right: -80px;
+            position: relative;
+        }
+        .carta4{
+            background: url(images/array/JIRAIYA.svg)no-repeat;
+            right: 13px;
+            top: 110px;
+            position: relative;
+        }
+        .carta5{
+            background: url(images/array/NAGATO.svg)no-repeat;
+            top: 5px;
+            position: relative;
+        }
 
-    div.naruto {
-        background: url(images/array/NARUTO.svg);
-        position: relative;
-        width: 90px;
-        height: 90px;
-        top: 86px;
-        left: 160px;
-        border: solid 2px red;
-        cursor: pointer;
-    }
-
-    div.itachi  {
-        background: url(images/array/ITACHI.svg);
-        position: relative;
-        width: 90px;
-        height: 90px;
-        top: -8px;
-        left: 290px;
-        border: solid 2px red;
-        cursor: pointer;
-    }
-
-    div.orochimaru {
-        background: url(images/array/OROCHIMARU.svg);
-        position: relative;
-        width: 90px;
-        height: 90px;
-        top: 0px;
-        left: 30px;
-        cursor: pointer;
-        border: solid 2px red;
-    }
-
-    div.jiraiya {
-        background: url(images/array/JIRAIYA.svg);
-        position: relative;
-        width: 90px;
-        height: 90px;
-        top: -94px;
-        left: 160px;
-        cursor: pointer;
-        border: solid 2px red;
-    }
-
-    div.nagato {
-        background: url(images/array/NAGATO.svg);
-        position: relative;
-        width: 90px;
-        height: 90px;
-        top: -187px;
-        left: 290px;
-        cursor: pointer;
+        .carta6{
+            background: url(images/array/OROCHIMARU.svg)no-repeat;
+            right: -40px;
+            top: 8px;
+            position: relative;
+        }
         
-    }
-  </style>
+        .tittle{
+            position: absolute;
+            margin-left: 50px;
+            margin-top: -15px;
+            font-size: 16px;
+            background-color: #00000090;
+            border-radius:50px ;
+            border: 2px solid red;
+            padding: 4px;
+        }
+        section nav.options{
+            margin-left: 50px;
+            display: flex;
+            flex-direction: row;
+            height: 34px;
+            margin-top: 200px;
+            overflow: hidden;
+        }
+        
+        section nav.options input[type=checkbox],
+        section nav.options input[type=number]{
+            -webkit-appearance: none;
+            cursor: pointer;
+            color: #EF4130;
+            border: none;
+            text-align: center;
+            outline: none;
+            width: 86px;
+            height: 34px;
+            transition: background 0.4s ease-in;
+
+
+        }
+        section nav.options input[type=checkbox].position{
+            background: url(images/array/btn-first.svg)no-repeat center;
+        }
+        section nav.options input[type=checkbox].position:checked{
+            background: url(images/array/btn-last.svg)no-repeat center;
+        }
+        section nav.options input[type=checkbox].action{
+            background: url(images/array/btn-add.svg)no-repeat center;
+            
+        }
+        section nav.options input[type=checkbox].action:checked{
+            background: url(images/array/btn-remove.svg)no-repeat center;
+        }
+        section nav.options input[type=number].nposition{
+            background: url(images/array/btn-position.svg)no-repeat center;
+        }
+        section button.btn_agregar{
+            background: url(images/array/btn-plus.svg) no-repeat;
+            width: 50px;
+            height: 50px;
+            margin: 0 auto;
+            top: 10px;
+            position: relative;
+            border: none;
+            left: -1px;
+            display: flex;
+            cursor: pointer;         
+        }
+    
+        .btn_remove{
+            background: url(images/array/btn-minus.svg) no-repeat;
+            width: 50px;
+            height: 50px;
+            margin: 0 auto;
+            top: 10px;
+            position: relative;
+            border: none;
+            left: -1px;
+            display: flex;
+            cursor: pointer;   
+            
+        }
+        div.scroll{
+            overflow-x: scroll;
+            width: 415px;
+        }
+        section figure.result{
+            display: inline-flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            margin:20px auto;
+            gap: 20px;
+            height: 70px;
+            margin-top: 0px auto ;
+            
+        }
+        section figure.result div{
+            background-size: contain !important;
+            height: 70px;
+            width: 70px;
+            border-radius: 20px;
+        }
+        section div.cart1{
+            background: url(images/array/OROCHIMARU.svg) no-repeat center;
+        }
+        section div.cart2{
+            background: url(images/array/NARUTO.svg) no-repeat center;
+        }
+        section div.cart3{
+            background: url(images/array/NAGATO.svg) no-repeat center;
+        }
+        section div.cart4{
+            background: url(images/array/JIRAIYA.svg) no-repeat center;
+        }
+        section div.cart5{
+            background: url(images/array/ITACHI.svg) no-repeat center;
+        }
+        section div.cart6{
+            background: url(images/array/GAARA.svg) no-repeat center;
+        }
+        section figure.result div span{
+            background-color: #00000099;
+            font-size: 1.3rem;
+            padding: 0px;
+            border-radius: 30px;
+        }
+       
+    </style>
 </head>
 <body>
     <main>
@@ -102,45 +217,120 @@
                     <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z" clip-rule="evenodd" />
                 </svg>
             </a>
-            
+            <h1></h1>
         </header>
-        <section>
-            <!--title1-->
-            <div class="title1"></div>
-
-            <!--title2-->
-            <div class="title2"></div>
-
-            <!--title3-->
-            <div class="title3"></div>
-
-            <!--SELECT YOUR CHARACTER-->
-            <div class="character">
-                <div class="gaara       character animate_animated animate_infinite "></div>
-                <div class="naruto      character animate_animated animate_infinite "></div>
-                <div class="itachi      character animate_animated animate_infinite "></div>
-                <div class="orochimaru  character animate_animated animate_infinite "></div>
-                <div class="jiraiya     character animate_animated animate_infinite "></div>
-                <div class="nagato      character animate_animated animate_infinite "></div>
+        <div class="container">
+            <header>
+                <h1></h1>
+            </header>
+            <!--TITTLE 1-->
+            <div class="tittle1"></div>
+            <article>
+                
+                <div class="carta carta1"></div>
+                <div class="carta carta2"></div>
+                <div class="carta carta3"></div>
+                <div class="carta carta4"></div>
+                <div class="carta carta5"></div>
+                <div class="carta carta6"></div>
+                
+            </article>
+            <section>
+                <h1 class="select"></h1>
+                <nav class="options">
+                    <input class="position" type="checkbox">
+                    <input class="action"   type="checkbox">
+                    <input class="nposition" type="number" min="0" max="99">
+                </nav>
+                <button class="btn_agregar"></button>
+                
+            </section>
+            <section>
+            <div class="scroll">
+                <figure class="result">
+    
+                </figure>
             </div>
         </section>
+        </div>
     </main>
     <script>
-        //ELEMENTOS
-        const character = document.querySelectorAll('.character')
+        var carts = []
+        const agregar = document.querySelector('.action')
+        const cartas = document.querySelectorAll('.carta')
+        const btn_agregar = document.querySelector('.btn_agregar')
+        const footer = document.querySelector('.footer')
+        const result= document.querySelector('.result')
+        const position = document.querySelector('.position')
+        const nposition = document.querySelector('.nposition')
+        // Globlal Variables
 
-        character.forEach(element => {
-            element.addEventListener('click', (e) => {
+        cartas.forEach(element =>{
+            element.addEventListener('click',(e)=>{
                 removeAnimation()
-                element.classList.add(animate__pulse)
+                element.classList.add('active')
+                 carts= (element.classList[1])
+
             })
         })
-
-        function removeAnimation(){
-            character.forEach(element => {
-                element.classList.remove('actived' , 'animate__pulse')
+        function removeAnimation (){
+            cartas.forEach(element=>{
+                element.classList.remove('active')
             })
         }
+        agregar.addEventListener('click',(e)=>{
+            
+            if(agregar.checked == true){
+                btn_agregar.classList.remove('btn_agregar')
+                btn_agregar.classList.add('btn_remove')
+                
+                
+               
+
+            }else{
+                btn_agregar.classList.remove('btn_remove')
+                btn_agregar.classList.add('btn_agregar')
+            }
+        })
+        btn_agregar.onclick = () =>{
+            if(nposition.value != ''){
+                if(agregar.checked != true){
+                    var pushNode = result.childNodes[nposition.value]
+                    var divcart = document.createElement(`div`)
+                    divcart.classList.add(`${carts}`, 'cartStyle')
+                    result.insertBefore(divcart,pushNode)
+                }else if(agregar.checked == true){
+                    var deleteNode= result.childNodes[nposition.value]
+                    result.removeChild(deleteNode)
+                }
+                
+            }else{
+                    if(agregar.checked != true){
+                        if(position.checked!= true){
+                            result.insertAdjacentHTML ('afterbegin', `<div class="${carts}"><span></span></div>`)
+                        }else{
+                            result.insertAdjacentHTML ('beforeend', `<div class="${carts} cartStyle"></div>`)
+                        }
+                }else if(agregar.checked == true){
+                    if(position.checked == true){
+                        divDelete = result.childNodes[(result.childNodes.length - 1)]
+                        result.removeChild(divDelete);
+                    }else{
+                        let divDelete = result.childNodes[0]
+                        result.removeChild(divDelete);
+                    }
+            }
+            }
+            
+        }
+        var position2 = 0
+        function leerInput(){
+            value = document.querySelector('.nposition').value
+            console.log(value)
+
+        }
+        
+       
     </script>
 </body>
 </html>
