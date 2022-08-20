@@ -53,7 +53,16 @@
                 <a href="22-forms-get.php"                  class="btn btn-outline-success text-start"                  ><span class="badge rounded-pill bg-success">22</span> Forms Get</a>
                 <a href="23-forms-post.php"                 class="btn btn-outline-success text-start"                  ><span class="badge rounded-pill bg-success">23</span> Forms Post</a>
                 <a href="24-date-time.php"                  class="btn btn-outline-success text-start"                  ><span class="badge rounded-pill bg-success">24</span> Date Time</a>
-                <a href="25-challenge-dates.php"            class="btn btn-outline-success text-start"                  ><span class="badge rounded-pill bg-success">25</span> Challenge Dates</a>
+                <a href="25-challenge-dates.php"            class="btn btn-outline-success text-start"                  ><span class="badge rounded-pill bg-success">24</span> Challenge Dates</a>
+                <a href="26-ssi.php"                        class="btn btn-outline-success text-start"                  ><span class="badge rounded-pill bg-success">26</span> ssi</a>
+                <a href="27-file-text.php"                  class="btn btn-outline-success text-start"                  ><span class="badge rounded-pill bg-success">27</span> File Text</a>
+                <a href="28-upload-files.php"               class="btn btn-outline-success text-start"                  ><span class="badge rounded-pill bg-success">28</span> Upload Files</a>
+                <a href="29-cookies.php"                    class="btn btn-outline-success text-start"                  ><span class="badge rounded-pill bg-success">29</span> Cookies</a>
+                <a href="30-sesions.php"                    class="btn btn-outline-success text-start"                  ><span class="badge rounded-pill bg-success">30</span> Sesions</a>
+                <a href="31-send-mail.php"                  class="btn btn-outline-success text-start"                  ><span class="badge rounded-pill bg-success">31</span> Send Mail</a>
+                <a href="32-exceptions.php"                 class="btn btn-outline-success text-start"                  ><span class="badge rounded-pill bg-success">32</span> Exceptions</a>
+                <a href="33-filters.php"                    class="btn btn-outline-success text-start"                  ><span class="badge rounded-pill bg-success">33</span> Filters</a>
+
                 
                 
             </div>
