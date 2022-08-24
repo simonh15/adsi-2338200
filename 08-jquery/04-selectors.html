@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Templete</title>
+    <title>Selectors</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <style>
         body {
             background-color: #303840;
+        }
+
+        .display-1 {
+            font-size: 8rem;
         }
         
     </style>
@@ -18,17 +22,19 @@
     <main class="container">
         <div class="row">
             <div class="col-md-6 offset-md-3">
-                <div class="card text-start my-5">
+                <div class="card text-center my-5">
                   <div class="card-body">
                     <nav class="breadcrumb">
-                        <a class="breadcrumb-item" href="index.html">Main Menu </a>
+                        <a class="breadcrumb-item" href="index.html">&larr; Main Menu </a>
 
-                        <span class="breadcrumb-item active" aria-current="page">Templete</span>
+                        <span class="breadcrumb-item active" aria-current="page">Selectors</span>
                     </nav>
                     <hr>
                     
-                    <section class="card-text">
-
+                    <section class="card-text d-flex justify-content align-items-center">
+                        <button class="btn btn-danger btn-remove">-</button>
+                        <h2 class="display-1 mx-3">0</h2>
+                        <button class="btn btn-success btn-add">+</button>
                     </section>
                   </div>
                 </div>
@@ -46,9 +52,13 @@
     </main>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script>
-        $(document).ready(function () {
-             $('h3').text('jQuery was Installed!')
-        });
-     </script>
+    
+       $(document).ready(function () {
+           $count = 0 
+           // add
+
+       });
+    </script>
+    
 </body>
 </html>
