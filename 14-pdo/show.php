@@ -21,46 +21,59 @@
                     Web App Pokemons
                 </h1>
                 <hr>
-                <a href="add.php" class="btn btn-lg btn-outline-success">
-                    <i class="fa fa-plus"></i>
-                    Add Pokemon
+                <a href="index.php" class="btn btn-outline-dark">
+                    <i class="fa fa-arrow-left"></i>
+                    Back to All Pokemons
                 </a>
+                <h2 class="text-center my-5">
+                    <i class="fa fa-search"></i>
+                    Show Pokemon
+                </h2>
                 <div class="table-responsive">
-                    <table class="table table-striped table-hover mt-5">
-                        <thead>
-                            <tr>
-                                <th>ID</th>
-                                <th>NAME</th>
-                                <th class="d-none d-sm-table-cell">TYPE</th>
-                                <th>IMAGE</th>
-                                <th class="d-none d-sm-table-cell">TRAINER</th>
-                                <th>ACTIONS</th>
-                            </tr>
-                        </thead>
-                        <tbody class="table-group-divider">
-                            <?php $pokemons = listAllPokemons($conx) ?>
-                            <?php foreach($pokemons as $pokemon): ?>
-                            <tr>
-                                <td><?php echo $pokemon['id'] ?></td>
-                                <td><?php echo $pokemon['name'] ?></td>
-                                <td class="d-none d-sm-table-cell"><span class="badge bg-dark"><?php echo $pokemon['type'] ?></span></td>
-                                <td>
-                                    <img src="<?php echo $pokemon['image'] ?>" width="40px">
-                                </td>
-                                <td class="d-none d-sm-table-cell"><?php echo $pokemon['nametrainer'] ?></td>
-                                <td>
-                                    <div class="dropdown">
-                                        <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                                            <i class="fa fa-cog"></i>
-                                        </button>
-                                        <ul class="dropdown-menu dropdown-menu-dark">
-                                            <li><a class="dropdown-item" href="show.php?id=<?php echo $pokemon['id'] ?>"><i class="fa fa-search"></i> Show</a></li>
-                                            <li><a class="dropdown-item" href="edit.php?id=<?php echo $pokemon['id'] ?>"><i class="fa fa-pen"></i> Edit</a></li>
-                                            <li><a class="dropdown-item bg-danger" href="#"><i class="fa fa-trash"></i> Delete</a></li>
-                                        </ul>
-                                    </div>
-                                </td>
-                            </tr>
+                    <table class="table table-striped table-hover">
+                        <tbody>
+                            <?php 
+                                $id = $_GET['id'];
+                                $pokemon = showPokemon($conx, $id);
+                            ?>
+                            <?php foreach($pokemon as $pk): ?>
+                                <tr>
+                                    <td colspan="2" class="text-center">
+                                        <img src="<?php echo $pk['image'] ?>" class="img-thumbnail" width="240px">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>ID:</th>
+                                    <td><?php echo $pk['id'] ?></td>
+                                </tr>
+                                <tr>
+                                    <th>NAME:</th>
+                                    <td><?php echo $pk['name'] ?></td>
+                                </tr>
+                                <tr>
+                                    <th>TYPE:</th>
+                                    <td><span class="badge bg-dark"><?php echo $pk['type'] ?></span></td>
+                                </tr>
+                                <tr>
+                                    <th>STRENGTH:</th>
+                                    <td><span class="badge bg-success"><?php echo $pk['strength'] ?></span></td>
+                                </tr>
+                                <tr>
+                                    <th>STAMINA:</th>
+                                    <td><span class="badge bg-success"><?php echo $pk['stamina'] ?></span></td>
+                                </tr>
+                                <tr>
+                                    <th>SPEED:</th>
+                                    <td><span class="badge bg-success"><?php echo $pk['speed'] ?></span></td>
+                                </tr>
+                                <tr>
+                                    <th>ACCURACY:</th>
+                                    <td><span class="badge bg-success"><?php echo $pk['accuracy'] ?></span></td>
+                                </tr>
+                                <tr>
+                                    <th>TRAINER:</th>
+                                    <td><?php echo $pk['nametrainer'] ?></td>
+                                </tr>
                             <?php endforeach ?>
                         </tbody>
                     </table>
@@ -76,11 +89,6 @@
     <script src="public/js/sweetalert2.js"></script>
     <script>
         $(document).ready(function () {
-            // Swal.fire(
-            //     'Good job!',
-            //     'Everything is OK!',
-            //     'success'
-            // )
         })
     </script>
 </body>
