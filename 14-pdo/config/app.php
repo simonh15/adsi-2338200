@@ -6,6 +6,7 @@
     // Config URL Site 
     $base_url = 'http://localhost:8000';
     $public   = $base_url . '/public';
+    $config   = $base_url . '/config';
     $css      = $public . '/css';
     $js       = $public . '/js';
 
