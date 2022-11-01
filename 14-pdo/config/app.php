@@ -1,4 +1,3 @@
-
 <?php
     // Config Sessions
     session_start();
@@ -15,3 +14,5 @@
     $user    = 'root';
     $passwd  = '';
     $name_db = 'adsi2338200';
+
+
